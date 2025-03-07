@@ -1,0 +1,12 @@
+Feature: Twitch Search # features/twitch/search.feature:1
+
+  @browse_video
+  Scenario: Verify if user is able to play searched video  # features/twitch/search.feature:4
+    Given user navigates to "https://m.twitch.tv"          # steps/twitch/twitch_steps.py:9
+    And user clicks search icon                            # steps/twitch/twitch_steps.py:16
+    And user searches for "StarCraft II" in search bar     # steps/twitch/twitch_steps.py:22
+    And clicks "Channels" tab from search results          # steps/twitch/twitch_steps.py:29
+    And user scrolls the page "2" times                    # steps/twitch/twitch_steps.py:35
+    And user selects a random streamer                     # steps/twitch/twitch_steps.py:41
+    Then video is played on selected streamer              # steps/twitch/twitch_steps.py:48
+

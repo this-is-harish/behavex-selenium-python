@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="12.00272536277771" tests='1' skipped='0'
+name="Twitchsearch" failures='0' errors='0'><testcase time="12.00272536277771" name="Verify_If_User_Is_Able_To_Play_Searched_Video" status="passed"
+         classname="Twitch_Search"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @browse_video
+                scenario: Verify if user is able to play searched video
+                given user navigates to "https://m.twitch.tv" ... Status.passed in 4.069s 
+                given user clicks search icon ... Status.passed in 0.1109s 
+                given user searches for "StarCraft II" in search bar ... Status.passed in 0.108s 
+                given clicks "Channels" tab from search results ... Status.passed in 0.0944s 
+                given user scrolls the page "2" times ... Status.passed in 2.031s 
+                given user selects a random streamer ... Status.passed in 5.567s 
+                then video is played on selected streamer ... Status.passed in 0.02251s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>
